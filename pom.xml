@@ -87,11 +87,11 @@
 		    <artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
 		
-		<!-- Security per Bcrypt (uso non implementato) -->
+		<!-- Security per Bcrypt (uso non implementato) 
 		<dependency>
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-crypto</artifactId>
-		</dependency>
+		</dependency> -->
 		
 		
 		
