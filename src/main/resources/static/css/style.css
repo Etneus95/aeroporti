@@ -1,0 +1,195 @@
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo principale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    padding: 20px;
+}
+
+h2, h3, p {
+    margin-bottom: 15px; /* Aggiunge spazio sotto a questi elementi */
+}
+
+h2 {
+    margin-top: 30px; /* Può dare un po' più di spazio sopra agli h2, se vuoi */
+}
+
+h3 {
+    margin-top: 20px; /* Un po' più di respiro sopra agli h3 */
+}
+
+/* Messaggi di successo e errore */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+    font-size: 16px;
+    text-align: center;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+    font-size: 16px;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* mantiene il contenuto centrato orizzontalmente */
+    justify-content: flex-start; /* allinea il contenuto in alto */
+    height: 100vh; /* mantiene l'altezza della pagina */
+    text-align: center;
+    padding-top: 50px; /* puoi aggiungere un po' di spazio dall'alto se necessario */
+}
+
+/* Classe per l'elemento in alto a destra */
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Tabelle */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Righe alternate */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Input smussati */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Input per data e dataora */
+input[type="date"],
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus,
+input[type="datetime-local"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Pulsante smussato */
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Stile per il contenitore della tabella */
+.table-container {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+/* Centro il form della gestione */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input[type="submit"] {
+    width: auto;
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #218838;
+}
